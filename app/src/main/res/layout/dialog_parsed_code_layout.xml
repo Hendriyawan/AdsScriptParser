@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:padding="8dp"
+    android:orientation="vertical">
+	
+	<android.support.v7.widget.AppCompatEditText
+		android:id="@+id/edit_parsed_code"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:padding="8dp"
+		android:background="@drawable/bg_round_edit_text"
+		android:scrollbars="vertical"
+		android:fadingEdge="vertical"
+		android:gravity="top"
+		android:layout_weight="1" />
+    
+</LinearLayout>

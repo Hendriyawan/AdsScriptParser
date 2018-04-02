@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center"
+	android:background="?attr/colorPrimary"
+    android:orientation="vertical">
+	
+	<ImageView
+		android:id="@+id/logo_in_splash_screen"
+		android:layout_width="match_parent"
+		android:layout_height="120dp"
+		android:src="@drawable/logo_in_splash_screen" />
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="@android:color/white"
+		android:text="Ads Script Parser" />
+    
+</LinearLayout>

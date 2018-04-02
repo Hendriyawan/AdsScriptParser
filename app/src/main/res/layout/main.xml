@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+	<!--android toolbar-->
+	<include android:id="@+id/toolbar"
+		layout="@layout/toolbar" />
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#f5f5f5"
+		android:padding="8dp"
+		android:layout_below="@id/toolbar"
+		android:orientation="vertical">
+		
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/button_do_parse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@android:color/white"
+				android:text="PARSE"
+				android:layout_alignParentRight="true"
+				android:layout_centerInParent="true" />
+			
+		</RelativeLayout>
+		
+		<android.support.v7.widget.AppCompatEditText
+			android:id="@+id/edit_code_to_parse"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="8dp"
+			android:hint="Enter code"
+			android:background="@drawable/bg_round_edit_text"
+			android:scrollbars="vertical"
+			android:fadingEdge="vertical"
+			android:gravity="top"
+			android:layout_weight="1" />
+		
+	</LinearLayout>
+	<!--Layout Ads Banner-->
+	<LinearLayout
+		android:id="@+id/layout_ads_banner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerInParent="true" />
+	
+</RelativeLayout>

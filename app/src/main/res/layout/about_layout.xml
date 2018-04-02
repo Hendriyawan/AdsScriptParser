@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/toolbar" />
+	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		
+	    <LinearLayout
+			android:id="@+id/layout_logo"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="?attr/colorPrimary"
+		    android:orientation="vertical"
+		    android:padding="8dp">
+		
+		    <ImageView
+			    android:id="@+id/logo"
+			    android:layout_width="match_parent"
+			    android:layout_height="120dp"
+			    android:src="@drawable/logo_in_splash_screen" />
+		
+		    <TextView
+			    android:id="@+id/app_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textAppearance="?android:attr/textAppearanceLarge"
+			    android:textColor="@android:color/white"
+			    android:layout_gravity="center"
+			    android:text="Ads Script Parser" />
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@android:color/white"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:text="Ads script parser is HTML to XML parser | Blogger Adsense converter | convert your Adsense script" />
+			
+			<TextView
+				android:id="@+id/copyright"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/white"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginTop="10dp" />
+			
+		</LinearLayout>
+		
+		
+		<LinearLayout
+			android:id="@+id/layout_ads_banner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:layout_centerInParent="true" />
+		
+	</RelativeLayout>
+    
+</LinearLayout>
