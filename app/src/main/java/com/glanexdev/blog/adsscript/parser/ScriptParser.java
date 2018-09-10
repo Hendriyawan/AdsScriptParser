@@ -22,7 +22,6 @@ public class ScriptParser
 	
 	/* get script ads parsed*/
 	public String getParsedCode(){
-		String parsed = code.replace("<", "&lt;").replace(">","&gt;").replace("\"", "&quot;").replace("\'", "&#39;");
-		return parsed;
+		return code.replace("<", "&lt;").replace(">","&gt;").replace("\"", "&quot;").replace("\'", "&#39;");
 	}
 }
